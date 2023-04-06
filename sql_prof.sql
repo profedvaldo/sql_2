@@ -40,3 +40,9 @@ INSERT INTO materia (descricao) VALUES("Mobile");
 INSERT INTO materia (descricao) VALUES("Ciências da Computação");
 INSERT INTO materia (descricao) VALUES("Proj. Vida");
 INSERT INTO materia (descricao) VALUES("Análise de Sistemas");
+
+/*alimentando a tabela professores*/
+INSERT INTO professor (nome, id_materia) VALUES ("Edvaldo Rodrigues", 7);
+INSERT INTO professor (nome, id_materia) VALUES ("Cleide Tardivo", 9);
+INSERT INTO professor (nome, id_materia) VALUES ("William", 10);
+
