@@ -1,3 +1,5 @@
+DROP TABLE professor;
+DROP TABLE materia;
 /*criando tabela professor*/
 CREATE TABLE professor (
     id_professor INTEGER AUTO_INCREMENT PRIMARY KEY,
