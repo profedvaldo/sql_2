@@ -1,3 +1,6 @@
+DROP TABLE professor;
+DROP TABLE materia;
+
 CREATE TABLE professor ( id INTEGER AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(100), 
                         email VARCHAR(255), cidade VARCHAR(100), id_materia INTEGER);
 
@@ -27,8 +30,6 @@ INSERT INTO professor (nome, email, materia) VALUES ("Edvaldo", "edvaldo.rodrigu
 INSERT INTO professor (nome, email, materia) VALUES ("Edvaldo", "edvaldo.rodrigues@escola.pr.gov.br", 13);
 
 INSERT INTO professor (nome, email, id_materia) VALUES ("Ferdinanda", "ferdinanda@escola.pr.gov.br", 1);
-
 INSERT INTO professor (nome, email, id_materia) VALUES ("Conrrado", "conrrad@escola.pr.gov.br", 5);
-
 INSERT INTO professor (nome, email, id_materia) VALUES ("Edvaldo", "edvaldo.rodrigues@escola.pr.gov.br", 15);
 INSERT INTO professor (nome, email, id_materia) VALUES ("Edvaldo", "edvaldo.rodrigues@escola.pr.gov.br", 13);
