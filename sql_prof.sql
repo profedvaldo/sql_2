@@ -8,3 +8,33 @@ CREATE TABLE professor (
 CREATE TABLE materia (
     id_materia INT AUTO_INCREMENT PRIMARY KEY,
     descricao varchar(100));
+
+/*alimentando a tabela materia */ 
+
+INSERT INTO materia (descricao) 
+VALUES("Português");
+INSERT INTO materia (descricao) VALUES("História");
+INSERT INTO materia (descricao) VALUES("Matemática");
+INSERT INTO materia (descricao) VALUES("Sociologia");
+INSERT INTO materia (descricao) VALUES("Inglês");
+INSERT INTO materia (descricao) VALUES("Geografia");
+INSERT INTO materia (descricao) VALUES("Banco de Dados***");
+INSERT INTO materia (descricao) VALUES("Química");
+INSERT INTO materia (descricao) VALUES("Front-end");
+INSERT INTO materia (descricao) VALUES("Mobile");
+INSERT INTO materia (descricao) VALUES("Ciências da Computação");
+INSERT INTO materia (descricao) VALUES("Análise de Sistemas");
+INSERT INTO materia (descricao) 
+VALUES("Português");
+INSERT INTO materia (descricao) VALUES("História");
+INSERT INTO materia (descricao) VALUES("Matemática");
+INSERT INTO materia (descricao) VALUES("Sociologia");
+INSERT INTO materia (descricao) VALUES("Inglês");
+INSERT INTO materia (descricao) VALUES("Geografia");
+INSERT INTO materia (descricao) VALUES("Banco de Dados***");
+INSERT INTO materia (descricao) VALUES("Química");
+INSERT INTO materia (descricao) VALUES("Front-end");
+INSERT INTO materia (descricao) VALUES("Mobile");
+INSERT INTO materia (descricao) VALUES("Ciências da Computação");
+INSERT INTO materia (descricao) VALUES("Proj. Vida");
+INSERT INTO materia (descricao) VALUES("Análise de Sistemas");
