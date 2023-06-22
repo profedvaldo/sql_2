@@ -22,3 +22,4 @@ if($resultado){
         echo $linha["id"]." - ".$linha["nome"];
     }
 }
+?>
