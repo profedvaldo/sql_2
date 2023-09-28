@@ -1,31 +1,46 @@
 <?php
-// Aqui vou conectar ao banco de dados 
 
-$hostname ="10.209.67.224"; 
-$username ="root"; 
-$password ="";
-$dbname ="empregados";
+/*aqui vamos conectar 
+com o banco 
+de dados*/
+$servername = "localhost";
+//você deu nome ao banco de dados
+$database = "func2d";
+$username = "root";
+$password = "";
 
-$conexao = mysqli_connect($hostname, $username, $password, $dbname) or die("Não foi possível fazer a conexão ao banco de dados.");
-?>
-<form method="GET">
-    <label>Nome</label>
-    <input type="text" name="txt_nome" />
-    <input type="submit" value="salvar" /><br />
-</form>
-<?php
-//mysqli_select_db($dbnome)
+$conexao = mysqli_connect(
+    $servername, $username, 
+    $password,$database
+);
 
-/*vou fazer uma pesquisa no banco de dados
-empregados e mostrar os dados*/
-
-$sql = "SELECT nome, id FROM empregado ORDER BY id DESC LIMIT 0,6";
-
-$resultado = mysqli_query($conexao, $sql);
-
-if($resultado){
-    while($linha = mysqli_fetch_array($resultado)){
-        echo $linha["id"]." - ".$linha["nome"]."<br />";
-    }
+if (!$conexao){
+    die("Falha na conexão".mysqli_connect_error());
 }
+//echo "conectado com sucesso";
+
+$id = $_POST["id"];
+$nome = $_POST["nome"];
+$cpf = $_POST["cpf"];
+$botao = $_POST["botao"];
+
+echo $id." ".$nome." ".$cpf." ".$botao;
+
+$sql_cadastrar = "INSERT INTO funcionarios 
+    (id, nome, cpf) VALUES('','$nome', '$cpf')";
+
 ?>
+<html>
+    <body>
+    <form name = "func" method = "post" >
+        <label>ID</label>
+        <input type ="text" name = "id" /><br />
+        <label>Nome</label>
+        <input type ="text" name = "nome" /><br />
+        <label>CPF</label>
+        <input type ="text" name = "cpf" /><br />
+        <input type ="submit" name = "botao" value = "cadastrar" />
+        <input type ="reset" name = "botao" value = "cancelar" />
+    </form>
+    </body>
+</html>
